@@ -1,24 +1,30 @@
-#dictionary 
-#its ordered because of indexed nature of the data 
-#key-value pair 
-
 shirts = {
-    
-    "type" :"polo",
-    "color" : ["red","white","black"],
-    "id" : 483948,
-    "active" : True ,
-    "kedai" : [{"jalan":"jalan langgar", "state",},      
-               {{"jalan":"jalan langgar", "state":}
-        },{
-            
-            {"jalan":"jalan langgar", "state":}
-            },{
-                
-                
-                {"jalan":"jalan langgar", "state":}
-                
-            }]
+    "type": "polo",
+    "color": ["red", "white", "black"],
+    "id": 483948,
+    "active": True,
+    "stores": [
+        {
+            "address": "jalan langgar",
+            "state": "Kedah"
+        },
+        {
+            "address": "jalan perai",
+            "state": "Penang"
+        },
+        {
+            "address": "jalan kuching",
+            "state": "Sarawak"
+        },
+        {
+            "address": "jalan melaka",
+            "state": "Melaka"
+        }
+    ]
 }
 
-try = ["color"]["]
+
+
+
+for store in shirts["stores"]:
+    print(store)
