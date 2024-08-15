@@ -1,18 +1,24 @@
+# initialize input  
 
-#initialize variable
+user_input = int(input("insert how many prime number you want :"))
+ 
+ # variable 
+ 
 
-user_input = int(input("insert decimal here"))
-
-counter = 0
-primeIs= False
-#process
-
-for x in range (2,int(user_input**1/2)+1):
+isPrime = False 
+number=2
+# baseCase 
   
-  if x % 2 == 0 :
-    print(x)
-    
-  counter+=1
+for number in range(2,int(user_input**0.5)+1):
+  #if number can be divided by 2 to produce zero remainder then its not prime.
+  if (number % 2 == 0 ):
+    isPrime 
+    number= number + 1
+  else:
+   isPrime = True 
+   print(number)
+
+
   
    
   
