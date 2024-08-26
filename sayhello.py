@@ -7,4 +7,5 @@ def add () :
 
     add(1,2)
 
-    print (add());
+    print (add())
+    

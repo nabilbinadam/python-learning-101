@@ -5,7 +5,7 @@ givennumber = 98765
 result = 0 
 
 result = givennumber % 10 
-givennumber = 
+givennumber = 0
 
 print(result)
 
