@@ -22,6 +22,4 @@ def pangram(user_input):
     else :
         print ("not pangram")    
 
-
- 
-pangram(user_input)       
+      
