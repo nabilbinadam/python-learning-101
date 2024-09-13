@@ -31,17 +31,15 @@ def doubling(user_input):
     return counter    
 
 
-
- 
-
-def checkDoublingGreaterThan9(counter):
+result = doubling(user_input) 
+#check=checkDoublingGreaterThan9()
+def checkDoublingGreaterThan9(result):
     sub=[]
-    for i in counter :
+    for i in result :
      if i < 9 :
        subtract = i - 9
        sub.append(subtract)
        print (sub)
-    
     return sub
 
 
@@ -50,9 +48,13 @@ def checkDoublingGreaterThan9(counter):
 
 
 
+
+
+"""
+
 doubling(user_input)
 checkDoublingGreaterThan9(counter)  
-"""
+
 def sumDigit(result):
    additional = 
    return additional
