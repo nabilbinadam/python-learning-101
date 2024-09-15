@@ -22,16 +22,22 @@ def doubling(user_input):
     counter =[]
     for i in range(len(user_input)- 1, -1, -2):
       #print(user_input[i])
-      ranging = int(user_input[i])*2
-      counter.append(ranging)
-      print(counter)
+      ranging = [int(user_input[i])*2]
       
+      
+      return ranging
     
-    
-    return counter    
+   
+    # sort + list 
+    total= ranging + list(user_input) 
+    total.sort()
+    counter.append(total)
+
+    print (counter)     
 
 
-result = doubling(user_input) 
+doubling(user_input) 
+"""
 #check=checkDoublingGreaterThan9()
 def checkDoublingGreaterThan9(result):
     sub=[]
@@ -50,7 +56,7 @@ def checkDoublingGreaterThan9(result):
 
 
 
-"""
+
 
 doubling(user_input)
 checkDoublingGreaterThan9(counter)  
