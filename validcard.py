@@ -20,12 +20,14 @@ user_input=str(input("insert credit card:"))
 def doubling(user_input):
       
     counter =[]
-    for i in range(len(user_input)- 1, -1, -2):
+    for doub in range(len(user_input)- 1, -1, -2):
       #print(user_input[i])
-      ranging = [int(user_input[i])*2]
-      
+      print(doub)
+      ranging = doub*2
+      print (ranging)
       
       return ranging
+      
     
    
     # sort + list 
