@@ -15,3 +15,5 @@ fruit_dic= {
 slicing=slice(1,4,2)
 
 print(fruits[slicing])
+
+print(fruit_dic['fruits'[slicing]])
