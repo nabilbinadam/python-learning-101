@@ -12,4 +12,6 @@ fruit_dic= {
 }
 
 
-print(fruit_dic.fruits)
+slicing=slice(1,4,2)
+
+print(fruits[slicing])
