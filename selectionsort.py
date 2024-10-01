@@ -16,7 +16,7 @@ def selection(data):
 
                 #print (j)  # j kena generate [5,5,3]
                 
-                if data[j]<data[min]:
+                if data[i]>data[j]:
 
                         min=j
                         #print(j)
