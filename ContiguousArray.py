@@ -16,9 +16,11 @@ def ContArray (input):
     length= len(input)
 
     for i in range(length):
-       
-        arrCont=int(i)
+        continuous = while data[i]==data[i+1]   # if element continous in order is a COnt array 
 
+        if i == continuous :
+
+        arrCont=int(i)
         print(arrCont)
 
 
