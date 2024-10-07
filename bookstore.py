@@ -14,3 +14,46 @@ Set the prices for one or more book objects and print the total amount to be pai
 Optionally, print the information for each book created.
 
 """
+
+class Book:
+
+    def __init__(self,tittle,author,ISBN,prices) -> None:
+
+        self.tittle= tittle
+        self.author= author
+        self.ISBN=ISBN
+        self.Payment= tittle
+        self.tittle= tittle
+        self.prices= prices
+
+
+    def doPayment(tittle,ISBN,Author,Payment):
+        pass 
+        
+    
+
+     
+    def add(tittle,ISBN,Author,Payment):
+
+        user_input = str(input("add tittle"))
+        tittle = user_input
+        
+        
+
+
+
+
+    
+    def delete(tittle,ISBN,Author,Payment):
+        pass 
+
+
+    
+    def read (tittle,ISBN,Author,Payment):
+        pass 
+
+
+
+
+
+
