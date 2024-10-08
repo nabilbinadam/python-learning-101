@@ -19,12 +19,14 @@ class Book:
 
     def __init__(self,tittle,author,ISBN,prices) -> None:
 
+        print("successfuly created!")
         self.tittle= tittle
         self.author= author
         self.ISBN=ISBN
         self.Payment= tittle
         self.tittle= tittle
         self.prices= prices
+        
 
 
     def doPayment(tittle,ISBN,Author,Payment):
@@ -33,16 +35,11 @@ class Book:
     
 
      
-    def add(tittle,ISBN,Author,Payment):
-
-        user_input = str(input("add tittle"))
-        tittle = user_input
-        
+    def info (tittle,ISBN,Author):
         
 
-
-
-
+    
+    
     
     def delete(tittle,ISBN,Author,Payment):
         pass 
@@ -54,6 +51,6 @@ class Book:
 
 
 
-
+book = Book("asd","nasd","asdas","asdasd")
 
 
