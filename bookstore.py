@@ -36,6 +36,7 @@ class Book:
 
      
     def info (tittle,ISBN,Author):
+        print("Tittle",tittle)
         
 
     
