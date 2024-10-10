@@ -17,41 +17,74 @@ Optionally, print the information for each book created.
 
 class Book:
 
-    def __init__(self,tittle,author,ISBN,prices) -> None:
+    def __init__(self,tittle,author,ISBN,payment) -> None: # create?
+
 
         print("successfuly created!")
         self.tittle= tittle
         self.author= author
         self.ISBN=ISBN
-        self.Payment= tittle
-        self.tittle= tittle
-        self.prices= prices
+        self.Payment= payment
+        self.prices= []
+        
+
+        
         
 
 
-    def doPayment(tittle,ISBN,Author,Payment):
-        pass 
+    def doPayment(self):  # any list we need to do for loop 
+
+        total=0
+        for i in self.prices :
+           print(i)
+           total += i
+
+        return total     
+           
+           
+     
+        
         
     
 
      
-    def info (tittle,ISBN,Author):
-        print("Tittle",tittle)
+    def info (self):  # read
+        print("Tittle:",self.tittle)
+        print("ISBN:",self.ISBN)
+        print("Author:",self.author)
+        print("Payment:",self.Payment)
+        print("Prices:",self.prices)
+
         
 
     
     
     
-    def delete(tittle,ISBN,Author,Payment):
-        pass 
+    def delete(self,info):
+        #show info 
+        self.tittle.info()
+        input = str(input("Choose Book To Delete:"))
+
+        if input in self.tittle:
+            input.split()
+        
 
 
     
-    def read (tittle,ISBN,Author,Payment):
+     def read (tittle,ISBN,Author,Payment):
         pass 
 
 
 
-book = Book("asd","nasd","asdas","asdasd")
+book1 = Book("Das Kapital","123123","Karl Marx","Cash")
+book2 = Book("Phenomology of Spirit","12356","Hegel","Cash")
+book1.prices= [123,123,123,123]
+book2.prices= [123,143,134,533]
+book2.info()
+print("----------")
+book1.info()
 
+print(book2.doPayment())
+
+book1.delete()
 
