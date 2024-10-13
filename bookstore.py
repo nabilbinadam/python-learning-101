@@ -26,10 +26,6 @@ class Book:
         self.ISBN=ISBN
         self.Payment= payment
         self.prices= []
-        
-
-        
-        
 
 
     def doPayment(self):  # any list we need to do for loop 
@@ -43,11 +39,6 @@ class Book:
            
            
      
-        
-        
-    
-
-     
     def info (self):  # read
         print("Tittle:",self.tittle)
         print("ISBN:",self.ISBN)
@@ -56,22 +47,16 @@ class Book:
         print("Prices:",self.prices)
 
         
-
-    
-    
-    
-    def delete(self,info):
+    def delete(self):
         #show info 
         self.tittle.info()
         input = str(input("Choose Book To Delete:"))
 
         if input in self.tittle:
-            input.split()
+            input.remove()
         
 
-
-    
-     def read (tittle,ISBN,Author,Payment):
+    def read (tittle,ISBN,Author,Payment):
         pass 
 
 
@@ -86,5 +71,7 @@ book1.info()
 
 print(book2.doPayment())
 
-book1.delete()
+Book.delete()
+
+
 
