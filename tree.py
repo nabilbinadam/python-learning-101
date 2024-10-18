@@ -9,5 +9,10 @@ data = {
 
 info = data.values()
 getting = data.items()
-print(info)
-print(getting)
+
+
+data["name"] = "karim"
+#print(getting)
+
+if "name" in data :
+    print ("yes")
