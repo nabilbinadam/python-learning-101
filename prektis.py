@@ -11,5 +11,9 @@ data  = {
 
 
 print(data["Name"])
+print (data.values())
+print(len(data))
+for date in data : 
+    if "Name" in date:
 
-values(Names)
+       print("Access Granted")
