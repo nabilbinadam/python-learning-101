@@ -98,7 +98,7 @@ class User :
 
      
 
-
+#basicly like calling a method.  
         
 user1=User('Nabil','asdasd','1235',123123)
 print(user1.name)
