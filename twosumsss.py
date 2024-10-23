@@ -6,15 +6,20 @@ Output: [1,2]
 """
 
 data = [2,7,11,15]
-target= int(input("insert target:"))
+target = 9
+def twosum(data,target):
+    length= len(data)
 
-length = len(data)
-for numbers in data:
-    i=numbers
-    if data[i] + data[i+1] == target:
-        print(data[i],data[i+1])
+    for i in range(length):
+        
 
-    else: 
-        print("no target")
+        for j in range(i):
 
+            if data[i]+ data[j+1] == target:
+
+                print("Correct")
+                
+            
+
+twosum(data,target)
 
