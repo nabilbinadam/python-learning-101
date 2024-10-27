@@ -13,7 +13,14 @@ k = 3
 
 def slide(data,k):
     length=len(data)
-    for i,j in range(length):
-        print("this is I:",i)
-        print("this is J:",j)
+    r=0
+    l=0
+    for (i,j) in range(length):
+        r=i
+        l=j+1
+        
+        print(r)
+        print(l)
 
+
+slide(data,k)
