@@ -10,24 +10,22 @@ Output: [1, 2] (because numbers[0] + numbers[1] = 2 + 7 = 9)
 
 
 """
-data= [2,7,11,15]
-target=9
-counter = 0
+  
+data = [2,7,11,15]
+target = 9
+
 def twosumpointer(data,target):
-    left = 0
-    right = len(data) - 1
-    counter=0
-    while left < right:
-        sum=data[left]+ data[right]
-        if sum== target:
-            print(data[left],data[right])
+    right= data[0]
+    left = data[-1]
+    while right>left:
+        sum = right + left 
+        if sum == target :
+            print(right,left)
 
-        elif sum != target:
-            counter+=1
+        elif sum != target :
+            print(right,left)
+    
 
-        else:
-            print("no value")    
-   
 
 
           
