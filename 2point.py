@@ -10,30 +10,42 @@ Output: [1, 2] (because numbers[0] + numbers[1] = 2 + 7 = 9)
 
 
 """
-  
 data = [2,7,11,15]
-target = 9
+target = 9 
+def twopointer(data, target):
+    right = len(data) - 1
+    left = 0  # This is incorrect; 'left' should be an index, not a value.
+    while right > left:
+        sum = data[right] + data[left]
 
-def twosumpointer(data,target):
-    right= len(data)-1
-    left = data[0]
-    while right>left:
-        sum = data[right] + data[left] 
-        if sum == target :
-            print(data[right],data[left])
+        if sum == target:
+            print(data[left], data[right])
             return
-
         elif sum < target:
-            left += 1  # Move the left pointer to the right to increase the sum
+            left += 1
         else:
-            right -= 1 
-       
+            right -= 1
+
+
+twopointer(data,target)   
+
+
+
+    
+    
+    
     
 
 
 
-          
 
 
 
-twosumpointer(data,target)
+
+
+
+
+
+
+
+
