@@ -16,7 +16,7 @@ target = 9
 
 def twosumpointer(data,target):
     right= len(data)-1
-    left = data[0]
+    left = 0
     while right>left:
         sum = data[right] + data[left] 
         if sum == target :
