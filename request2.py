@@ -50,5 +50,13 @@ data={
 }
 
 bandname= [member["name"]for member in data["band"]["members"]]
+album =   [album["title"]for album in data["band"]["albums"]]
 
-print (bandname)
+tracks =  [tracks["tracks"]for tracks in data["band"]["albums"]]
+
+release_year =  [year["release_year"]  for year in data["band"]["albums"]]
+
+#print (bandname)
+#print(album)
+print("Tracks:",tracks)
+print(release_year)
