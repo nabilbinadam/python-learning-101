@@ -16,7 +16,7 @@ class Patient:
         for price in self.medicinesprices:
             total += price
         return total
-
+a
 # Creating Patient objects with required parameters
 peter = Patient("Peter", "Park", 2103890128)     
 anthony = Patient("Anthony", "Smith", 301298312)     
