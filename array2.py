@@ -8,7 +8,7 @@ for i in (num):
       
       print(add)
 
-
+asdfkoe
 
 
 

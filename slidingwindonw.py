@@ -18,4 +18,4 @@ def slidingwindow(data,target):
         elif target not in ranging:
             left+=1
         else:
-            righ-=1    
+            righ-=1

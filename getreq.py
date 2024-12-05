@@ -22,3 +22,4 @@ def twopoint(data,target):
 
 
 print(twopoint(data,target))
+
