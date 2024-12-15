@@ -6,14 +6,17 @@ name ="Sam Jacob"
 #split the name into two
 #Take first initial
 
-def initials (name):
-
-    splitting=name.split(" ")
-    for name in splitting:
-        print(name)
-
-
-
-
-initials(name)
+def splitName (name):
+    split=name.split(" ")
+    first_char= split[0][0]
+    second_char=split[1][0]
     
+    return first_char + second_char
+    
+
+
+
+
+
+
+print(splitName(name))
